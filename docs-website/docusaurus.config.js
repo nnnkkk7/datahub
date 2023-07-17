@@ -18,7 +18,9 @@ module.exports = {
   noIndex: isSaas,
   customFields: {
     isSaas: isSaas,
-    markpromptProjectKey: process.env.DOCUSAURUS_MARKPROMPT_PROJECT_KEY || 'IeF3CUFCUQWuouZ8MP5Np9nES52QAtaA',
+    markpromptProjectKey:
+      process.env.DOCUSAURUS_MARKPROMPT_PROJECT_KEY ||
+      "IeF3CUFCUQWuouZ8MP5Np9nES52QAtaA",
   },
   themeConfig: {
     ...(!isSaas && {
@@ -67,6 +69,10 @@ module.exports = {
         {
           href: "https://feature-requests.datahubproject.io/roadmap",
           label: "Roadmap",
+          position: "right",
+        },
+        {
+          type: "docsVersionDropdown",
           position: "right",
         },
         {
